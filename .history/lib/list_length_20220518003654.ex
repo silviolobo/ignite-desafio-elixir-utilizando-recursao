@@ -5,7 +5,7 @@ defmodule ListLength do
 
   defp sum([], acc), do: acc
 
-  defp sum([_head | tail], acc) do
+  defp sum([head | tail], acc) do
     acc = acc + 1
     sum(tail, acc)
   end

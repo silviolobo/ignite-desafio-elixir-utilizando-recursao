@@ -1,11 +1,13 @@
 defmodule ListLength do
-  def call(list) do
-    sum(list, 0)
+  def call() do
+    # TO DO
   end
+
+  def call(list), do: sum(list, 0)
 
   defp sum([], acc), do: acc
 
-  defp sum([_head | tail], acc) do
+  defp sum([head | tail], acc) do
     acc = acc + 1
     sum(tail, acc)
   end
